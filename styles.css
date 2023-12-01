@@ -353,3 +353,40 @@ footer li {
         margin-top: 10px; /* Ajusta el margen superior según sea necesario */
     }
 }
+
+@media (max-width: 768px) {
+    .formularioo {
+        padding: 10px; /* Ajusta el relleno para pantallas más pequeñas si es necesario */
+    }
+
+    .form-header {
+        padding: 20px; /* Ajusta el relleno para pantallas más pequeñas si es necesario */
+    }
+
+    .form-header h1,
+    .form-header p {
+        margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .formulario {
+        padding: 20px; /* Ajusta el relleno para pantallas más pequeñas si es necesario */
+    }
+
+    .form-row {
+        margin-bottom: 20px; /* Ajusta el margen inferior entre las filas del formulario */
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas si es necesario */
+    }
+
+    .form-row textarea {
+        font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas más pequeñas si es necesario */
+        min-height: 80px; /* Ajusta la altura mínima del área de texto para pantallas más pequeñas si es necesario */
+    }
+
+    .form-row button {
+        padding: 10px 20px; /* Ajusta el relleno del botón para pantallas más pequeñas si es necesario */
+    }
+}
