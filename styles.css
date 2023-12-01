@@ -1,0 +1,355 @@
+/* styles.css */
+
+/* Estilo general del cuerpo de la página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado (header) */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    header{
+        background-color: orange;
+    }
+}
+
+header a {
+    text-decoration: none;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul{
+        color: orange;
+    }
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+/* Estilo de la sección Acerca de mí */
+.seccion-1 {
+    display: flex;
+    justify-content:space-between ;
+    padding: 20px;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .seccion-1{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+.acerca-de p {
+    flex: 1;
+    
+}
+
+.acerca-imagen img {
+    border: 4px solid #000;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Estilo del pie de página (footer) */
+footer a {
+    text-decoration: none;
+    font-size: 24px;
+    color: yellow;
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+
+.pie-depagina  {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    font-size: 18px;
+}
+
+/* Estilo de la sección principal */    
+#seccion-principal {
+    padding: 20px;
+}
+
+/* Estilo de la imagen en la sección 2 */
+.seccion-2 img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.seccion-3 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.Trabajos {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+}
+
+.titulotrabajos {
+    margin-bottom: 20px; 
+    margin-left: 40px;
+}
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 30%; 
+    text-align: justify;
+}
+.proyecto-suelo,
+.proyecto-microorganismo,
+.proyecto-agua {
+    margin: 40px; 
+    padding: 40px; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+}
+.proyecto img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.proyecto-description {
+    margin-top: 5px;
+    flex: 1;
+    max-width: 100%;
+}
+.ejemplo-1,
+.ejemplo-2,
+.ejemplo-3 {
+    max-width: 100%; 
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;  
+}
+
+.formularioo {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px 0px 50px 170px;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px; 
+    margin-right: 80px;
+}
+
+.form-header p {
+    font-size: 30px;
+    margin-bottom: 20px; 
+    margin-right: 80px;
+}
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"]
+  {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    min-height: 100px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    width: 100%;
+}
+
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5995da; 
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+                
+}
+    
+.form-row button:hover {
+    background-color: #76aeed;
+}
+      
+      
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+@media (max-width: 768px) {
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(103, 69, 103);
+        text-align: center;
+        top: 15%;
+        left: 100%;
+        transition: all 2,5s;
+    }
+
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    header a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: red;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion-3 {
+        padding: 10px; /* Ajusta el relleno para pantallas más pequeñas si es necesario */
+    }
+
+    .Trabajos {
+        flex-direction: column; /* Cambia la dirección del flex container a columna */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    .proyecto {
+        width: 100%; /* Establece el ancho del proyecto al 100% para ocupar todo el ancho */
+        margin-bottom: 80px;
+    }
+
+    .proyecto img {
+        max-width: 100%; /* Asegura que las imágenes sean responsivas */
+    }
+
+    .proyecto-description {
+        margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    }
+}
